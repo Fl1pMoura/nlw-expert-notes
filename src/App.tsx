@@ -2,6 +2,7 @@ import React, { ChangeEvent, useState } from 'react'
 import logo from './assets/logo-nlw-notes.svg'
 import { NoteCard } from './components/noteCard'
 import NewNoteCard from './components/newNoteCard'
+import { toast } from 'sonner';
 
 export function App() {
 
@@ -46,6 +47,7 @@ export function App() {
     } ) 
     setNotes(notesArray)
     localStorage.setItem('notes', JSON.stringify(notesArray))
+    toast.error('Nota apagada com sucesso!')
   }
 
   const filteredNotes = search !== '' ? notes.filter((note => note.content.toLowerCase().includes(search.toLowerCase()))) : notes

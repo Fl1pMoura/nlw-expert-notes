@@ -13,6 +13,7 @@ export default function NewNoteCard({onCreatedNote}: newNoteCardProps){
   const [shouldShowOnboarding, setShouldShowOnboarding] = useState(true)
   const [content, setContent] = useState('')
   const [isRecording, setIsRecording] = useState(false)
+  const [isDisabled, setIsDisabled] = useState(false)
 
   function handleRecording(){
     const isSpeechRecogAPIAvailable = 'SpeechRecognition' in window ||'webkitSpeechRecognition' in window 
@@ -23,9 +24,9 @@ export default function NewNoteCard({onCreatedNote}: newNoteCardProps){
     }
 
     setIsRecording(true);
-    setShouldShowOnboarding(false);
-
-
+    setIsDisabled(true);
+    setShouldShowOnboarding(false); 
+    
 
     const speechRecognitionAPI = window.SpeechRecognition || window.webkitSpeechRecognition
     speechRecognition = new speechRecognitionAPI;
@@ -50,6 +51,7 @@ export default function NewNoteCard({onCreatedNote}: newNoteCardProps){
 
   function handleStopRecording(){
     setIsRecording(false);
+    setIsDisabled(false);
     speechRecognition?.stop()
   }
 
@@ -98,7 +100,7 @@ export default function NewNoteCard({onCreatedNote}: newNoteCardProps){
     <span className='text-slate-300 font-medium text-sm'>Adicionar nota</span>
       {(shouldShowOnboarding ? <p className='text-slate-400 leading-6 text-sm'>
     Comece <button onClick={handleRecording} className="text-lime-400 font-medium hover:underline">gravando uma nota</button> em áudio ou se preferir <button className="text-lime-400 font-medium hover:underline" onClick={handleEditor}>utilize apenas texto</button>.
-    </p> : <textarea className="resize-none bg-transparent text-sm leading-6 outline-none flex-1 text-slate-400" autoFocus onChange={handleContent} value={content}/>)}
+    </p> : <textarea disabled={isDisabled} className="resize-none bg-transparent text-sm leading-6 outline-none flex-1 text-slate-400" autoFocus onChange={handleContent} value={content}/>)}
     </div>
     {isRecording ? 
     <button type="button" onClick={handleStopRecording} className="flex gap-2 w-full bg-slate-800 py-4 items-center justify-center text-center text-sm font-semibold text-slate-50 outline-none hover:text-slate-200">
