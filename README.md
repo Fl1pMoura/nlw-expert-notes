@@ -5,6 +5,11 @@ NLW Expert Notes is an innovative note-taking application similar to Samsung Not
 <h2>Live Demo</h2>
 Check out the live demo of NLW Expert Notes <a href="https://nlw-expert-notes-chi.vercel.app/" target="_blank">here.</a>  <i>(cntrl + click pls i don't wanna miss u)</i>
 
+<h2>Application Prints</h2>
+  <img src="https://github.com/Fl1pMoura/nlw-expert-notes/assets/130615128/12a91481-6be8-405b-96b1-a553421aa93d">
+  <img src="https://github.com/Fl1pMoura/nlw-expert-notes/assets/130615128/2a40c652-86a3-4c6a-9df8-a6d81141ccc2">
+  <img src="https://github.com/Fl1pMoura/nlw-expert-notes/assets/130615128/59dc4c2d-687c-4514-b912-8e9f33515f5a">
+
 <h2>New Feature: Speech Recognition</h2>
 Our latest addition to NLW Expert Notes is the Speech Recognition feature. With this feature, users can dictate their notes instead of typing them, providing a more convenient and hands-free experience. The integration of SpeechRecognition API ensures accurate transcription of spoken words into text.
 
