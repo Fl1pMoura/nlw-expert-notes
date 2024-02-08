@@ -92,7 +92,7 @@ export default function NewNoteCard({onCreatedNote}: newNoteCardProps){
     <Dialog.Overlay className="bg-black/60 inset-0 fixed" />
     
     <Dialog.Content className="z-10 fixed inset-0 md:inset-auto md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 bg-slate-700 md:max-w-[640px] w-full md:min-h-[600px] md:rounded-md outline-none flex flex-col overflow-hidden">
-    <Dialog.Close className="absolute top-0 right-0 p-1.5 bg-slate-800 group">
+    <Dialog.Close onClick={handleStopRecording} className="absolute top-0 right-0 p-1.5 bg-slate-800 group">
      <X className="text-slate-500 size-5 group-hover:text-slate-100"/>
     </Dialog.Close>
     <form className="flex flex-1 flex-col">
