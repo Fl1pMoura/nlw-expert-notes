@@ -1,4 +1,3 @@
-<img src="https://private-user-images.githubusercontent.com/74038190/241763891-7bb1e704-6026-48f9-8435-2f4d40101348.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDc0Mjc2NDksIm5iZiI6MTcwNzQyNzM0OSwicGF0aCI6Ii83NDAzODE5MC8yNDE3NjM4OTEtN2JiMWU3MDQtNjAyNi00OGY5LTg0MzUtMmY0ZDQwMTAxMzQ4LmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAyMDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMjA4VDIxMjIyOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWJiNWFjNTYzOTY4Mzc0NmFmNjYyODczNWI5YTVhODY4YThiNWNiOTE2MDExYjM0M2M3YjgyZDVhZTQyNmVmNGUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.9ddHunSwVgiuiTA_6aU6rApLEJY-QNGqcQGQrj-OHC4">
 
 <h1>NLW Expert Notes</h1>
 NLW Expert Notes is an innovative note-taking application similar to Samsung Notes and Apple Notes, but with the added functionality of the SpeechRecognition API. This allows users to transcribe their voice into text, creating notes effortlessly.
@@ -9,6 +8,7 @@ Check out the live demo of NLW Expert Notes <a href="https://nlw-expert-notes-ch
 <h2>Application Prints</h2>
   <img src="https://github.com/Fl1pMoura/nlw-expert-notes/assets/130615128/12a91481-6be8-405b-96b1-a553421aa93d">
   <img src="https://github.com/Fl1pMoura/nlw-expert-notes/assets/130615128/2a40c652-86a3-4c6a-9df8-a6d81141ccc2">
+  <img src="https://github.com/Fl1pMoura/nlw-expert-notes/assets/130615128/59dc4c2d-687c-4514-b912-8e9f33515f5a">
 
 <h2>New Feature: Speech Recognition</h2>
 Our latest addition to NLW Expert Notes is the Speech Recognition feature. With this feature, users can dictate their notes instead of typing them, providing a more convenient and hands-free experience. The integration of SpeechRecognition API ensures accurate transcription of spoken words into text.
