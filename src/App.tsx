@@ -1,4 +1,4 @@
-import { ChangeEvent, useState } from 'react'
+import React, { ChangeEvent, useState } from 'react'
 import logo from './assets/logo-nlw-notes.svg'
 import { NoteCard } from './components/noteCard'
 import NewNoteCard from './components/newNoteCard'

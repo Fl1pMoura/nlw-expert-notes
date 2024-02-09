@@ -11,7 +11,6 @@ let speechRecognition: SpeechRecognition | null = null
 
 export default function NewNoteCard({onCreatedNote}: newNoteCardProps){
   const [shouldShowOnboarding, setShouldShowOnboarding] = useState(true)
-  const [languages, setLanguages] = useState('pt-BR')
   const [content, setContent] = useState('')
   const [isRecording, setIsRecording] = useState(false)
   const [isDisabled, setIsDisabled] = useState(false)
@@ -53,7 +52,6 @@ export default function NewNoteCard({onCreatedNote}: newNoteCardProps){
   function handleStopRecording(){
     setIsRecording(false);
     setIsDisabled(false);
-    setShouldShowOnboarding(true);
     speechRecognition?.stop()
   }
 
@@ -80,10 +78,6 @@ export default function NewNoteCard({onCreatedNote}: newNoteCardProps){
     setContent('');
     setShouldShowOnboarding(true);
     toast.success('Nota criada com sucesso!')
-  }
-
-  function handleLanguages(){
-
   }
 
   return(
